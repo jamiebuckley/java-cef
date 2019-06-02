@@ -7,7 +7,6 @@
         <maven.compiler.source>1.9</maven.compiler.source>
         <maven.compiler.target>1.9</maven.compiler.target>
     </properties>
-
     <repositories>
         <repository>
             <id>central</id>
@@ -60,13 +59,6 @@
                 </configuration>
             </plugin>
         </plugins>
-        <pluginManagement>
-            <!-- NOTE: These plugins will be removed from future versions of the super POM -->
-            <!-- They are kept for the moment as they are very unlikely to conflict with lifecycle mappings (MNG-4453) -->
-            <plugins>
-
-            </plugins>
-        </pluginManagement>
     </build>
 
     <reporting>
@@ -84,17 +76,6 @@
                     <value>true</value>
                 </property>
             </activation>
-            <build>
-                <plugins>
-                    <plugin>
-                        <inherited>true</inherited>
-                        <artifactId>maven-deploy-plugin</artifactId>
-                        <configuration>
-                            <updateReleaseInfo>true</updateReleaseInfo>
-                        </configuration>
-                    </plugin>
-                </plugins>
-            </build>
         </profile>
     </profiles>
 </project>
