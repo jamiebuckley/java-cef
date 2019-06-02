@@ -9,17 +9,13 @@ import java.awt.event.FocusAdapter;
 import java.awt.event.FocusEvent;
 import java.awt.KeyboardFocusManager;
 import java.io.File;
-import java.lang.Thread.UncaughtExceptionHandler;
 
-import javax.swing.JFrame;
 import javax.swing.JPanel;
 
 import org.cef.CefApp;
 import org.cef.CefApp.CefVersion;
 import org.cef.CefClient;
 import org.cef.CefSettings;
-import org.cef.CefSettings.ColorType;
-import org.cef.OS;
 import org.cef.browser.CefBrowser;
 import org.cef.browser.CefFrame;
 import org.cef.browser.CefMessageRouter;

@@ -7,7 +7,6 @@ package org.cef.browser;
 import java.awt.event.KeyEvent;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseWheelEvent;
-import java.awt.Canvas;
 import java.awt.Component;
 import java.awt.Point;
 import java.awt.Rectangle;
@@ -18,7 +17,6 @@ import java.util.Vector;
 import javax.swing.SwingUtilities;
 
 import org.cef.CefClient;
-import org.cef.browser.CefRequestContext;
 import org.cef.callback.CefDragData;
 import org.cef.callback.CefNativeAdapter;
 import org.cef.callback.CefPdfPrintCallback;

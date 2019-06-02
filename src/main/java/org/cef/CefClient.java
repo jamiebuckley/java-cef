@@ -17,8 +17,6 @@ import java.util.Collection;
 import java.util.HashMap;
 import java.util.Vector;
 
-import javax.swing.SwingUtilities;
-
 import org.cef.browser.CefBrowser;
 import org.cef.browser.CefBrowserFactory;
 import org.cef.browser.CefFrame;
@@ -55,7 +53,6 @@ import org.cef.network.CefRequest;
 import org.cef.network.CefRequest.TransitionType;
 import org.cef.network.CefResponse;
 import org.cef.network.CefURLRequest;
-import org.cef.network.CefWebPluginInfo;
 
 /**
  * Client that owns a browser and renderer.
