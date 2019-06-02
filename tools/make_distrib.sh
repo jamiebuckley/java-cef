@@ -14,7 +14,7 @@ else
   export DISTRIB_DOCS_PATH="$DISTRIB_PATH/docs"
   export OUT_PATH="./out"
   export OUT_DOCS_PATH="./out/docs"
-  export SOURCE_PATH="./java"
+  export SOURCE_PATH="./src/main/java"
   export JOGAMP_PATH="./third_party/jogamp"
   export TOOLS_DISTRIB_PATH="./tools/distrib/$1"
   export EXCLUDE_FILE="./tools/distrib/EXCLUDE_FILES.txt"

@@ -122,10 +122,6 @@ jcef_dir = os.path.abspath(os.path.join(script_dir, os.pardir))
 args = {}
 read_readme_file(os.path.join(jcef_dir, 'jcef_build', 'README.txt'), args)
 
-# retrieve url and revision information for CEF
-if not git.is_checkout(jcef_dir):
-  raise Exception('Not a valid checkout: %s' % (jcef_dir))
-
 jcef_commit_number = git.get_commit_number(jcef_dir)
 jcef_commit_hash = git.get_hash(jcef_dir)
 jcef_url = git.get_url(jcef_dir)
