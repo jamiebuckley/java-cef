@@ -40,7 +40,7 @@ import javax.swing.SwingUtilities;
  * The visibility of this class is "package". To create a new
  * CefBrowser instance, please use CefBrowserFactory.
  */
-class CefBrowserOsr extends CefBrowser_N implements CefRenderHandler {
+public class CefBrowserOsr extends CefBrowser_N implements CefRenderHandler {
     private CefRenderer renderer_;
     private GLCanvas canvas_;
     private long window_handle_ = 0;
@@ -48,11 +48,11 @@ class CefBrowserOsr extends CefBrowser_N implements CefRenderHandler {
     private Point screenPoint_ = new Point(0, 0);
     private boolean isTransparent_;
 
-    CefBrowserOsr(CefClient client, String url, boolean transparent, CefRequestContext context) {
+    public CefBrowserOsr(CefClient client, String url, boolean transparent, CefRequestContext context) {
         this(client, url, transparent, context, null, null);
     }
 
-    private CefBrowserOsr(CefClient client, String url, boolean transparent,
+    public CefBrowserOsr(CefClient client, String url, boolean transparent,
             CefRequestContext context, CefBrowserOsr parent, Point inspectAt) {
         super(client, url, context, parent, inspectAt);
         isTransparent_ = transparent;
