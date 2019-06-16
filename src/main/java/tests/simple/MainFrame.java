@@ -186,7 +186,7 @@ public class MainFrame extends JFrame {
         // The simple example application is created as anonymous class and points
         // to Google as the very first loaded page. Windowed rendering mode is used by
         // default. If you want to test OSR mode set |useOsr| to true and recompile.
-        boolean useOsr = false;
+        boolean useOsr = true;
         new MainFrame("http://www.google.com", useOsr, false);
     }
 }

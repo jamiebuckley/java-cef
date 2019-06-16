@@ -38,13 +38,16 @@
             <groupId>org.jogamp.gluegen</groupId>
             <artifactId>gluegen-rt</artifactId>
             <version>2.3.2</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/third_party/jogamp/jar/gluegen-rt.jar</systemPath>
         </dependency>
         <dependency>
             <groupId>org.jogamp.jogl</groupId>
             <artifactId>jogl-all</artifactId>
             <version>2.3.2</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/third_party/jogamp/jar/jogl-all.jar</systemPath>
         </dependency>
-
     </dependencies>
     <build>
         <directory>${project.basedir}/target</directory>

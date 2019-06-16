@@ -330,14 +330,14 @@ if(OS_MACOSX)
     TARGET ${JCEF_TARGET}
     POST_BUILD
     # Build the main app bundle.
-    COMMAND ant
-            -buildfile ${CMAKE_SOURCE_DIR}
-            -Djdk7.path=${JAVA_DIR}
-            -Dout.path=${CEF_TARGET_OUT_DIR}
-            -Dout.name=${JCEF_APP_NAME}
-            -Dout.id=org.jcef.jcef
-            -Dout.mainclass=tests.detailed.MainFrame
-            bundle
+#    COMMAND ant
+#            -buildfile ${CMAKE_SOURCE_DIR}
+#            -Djdk7.path=${JAVA_DIR}
+#            -Dout.path=${CEF_TARGET_OUT_DIR}
+#            -Dout.name=${JCEF_APP_NAME}
+#            -Dout.id=org.jcef.jcef
+#            -Dout.mainclass=tests.detailed.MainFrame
+#            bundle
     # Copy the helper app bundle into the main app bundle.
     COMMAND ${CMAKE_COMMAND} -E copy_directory
             "${JCEF_HELPER_APP}"
